@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet" />
+
+    <title>Frontend Mentor | Calculator app</title>
+    
+  </head>
+  <body class="theme-1">
+    <main class="main">
+      <section
+        class="[ header ] [ flex-row flex-space-between padding-bottom-32 ]">
+        <h2 class="font-size-default">Calculator</h2>
+        <div class="[ slider-container ] [ font-size-12 ]">
+          
+          <p>THEME</p>
+
+          <div class="[ theme-slider ]">
+            <input name="theme" type="radio" class="theme-radio" id="1" checked /> <label class="theme-label" for="1"> 1</label>
+            <input name="theme" type="radio" class="theme-radio" id="2" /> <label class="theme-label" for="2"> 2</label>
+            <input name="theme" type="radio" class="theme-radio" id="3" /><label class="theme-label" for="3"> 3</label>
+            <div class="theme-indicator"> </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen"><h2 id="current-number">0</h2></section>
+      <section class="[ keyboard ] [ padding-24 border-radius ]">
+        
+        <button value="7" class="[ button ][ border-radius ] [ number-js ]">
+          7
+        </button>
+
+        <button value="8" class="[ button ][ border-radius ] [ number-js ]">
+          8
+        </button>
+
+        <button value="9" class="[ button ][ border-radius ] [ number-js ]">
+          9
+        </button>
+
+        <button
+          value="Delete" class="[ button ] [ text-letters font-size-20 border-radius ]">
+          DEL
+        </button>
+
+        <button value="4" class="[ button ][ border-radius ] [ number-js ]">
+          4
+        </button>
+        
+        <button value="5" class="[ button ][ border-radius ] [ number-js ]">
+          5
+        </button>
+
+        <button value="6" class="[ button ][ border-radius ] [ number-js ]">
+          6
+        </button>
+
+        <button value="+" class="[ button ][ border-radius ] [ operand-js ]">
+          +
+        </button>
+
+        <button value="1" class="[ button ][ border-radius ] [ number-js ]">
+          1
+        </button>
+
+        <button value="2" class="[ button ][ border-radius ] [ number-js ]">
+          2
+        </button>
+
+        <button value="3" class="[ button ][ border-radius ] [ number-js ]">
+          3
+        </button>
+
+        <button value="-" class="[ button ][ border-radius ] [ operand-js ]">
+          -
+        </button>
+
+        <button value="." class="[ button ][ border-radius ]">
+          .
+        </button>
+        
+        <button value="0" class="[ button ][ border-radius ] [ number-js ]">
+          0
+        </button>
+
+        <button value="/" class="[ button ][ border-radius ] [ operand-js ]">
+          /
+        </button>
+
+        <button value="x" class="[ button ][ border-radius ] [ operand-js ]">
+          x
+        </button>
+
+        <button
+          value="Reset" class="[ button ] [ grid-reset text-letters font-size-20 border-radius max-width ]">
+          RESET
+        </button>
+
+        <button value="=" class="[ button ] [ grid-equal text-equal font-size-20 border-radius max-width ]">
+          =
+        </button>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        
+      Coded by <a href="https://github.com/YoussefAbdellaoui">Youssef</a>.
+    </footer>
+
+    <script src="./design.js"></script>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
